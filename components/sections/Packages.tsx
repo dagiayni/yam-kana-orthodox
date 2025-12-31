@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { Button } from "@/components/ui/button";
@@ -15,8 +15,27 @@ import { cn } from "@/lib/utils";
 export default function Packages() {
     const { t, language } = useLanguage();
     const isMobile = useIsMobile();
+    const scrollRef = useRef<HTMLDivElement>(null);
     const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
     const [viewingPackage, setViewingPackage] = useState<any>(null);
+    const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+
+    useEffect(() => {
+        if (!isMobile || !isAutoScrolling) return;
+
+        const container = scrollRef.current;
+        if (!container) return;
+
+        const interval = setInterval(() => {
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+                container.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: 300, behavior: 'smooth' });
+            }
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [isMobile, isAutoScrolling]);
 
     const packages = [
         {
@@ -99,13 +118,31 @@ export default function Packages() {
 
                 {/* Bento Grid Layout - Horizontal scroll on mobile */}
                 <div className="relative group/slider">
-                    {/* Mobile Swipe Hint */}
-                    <div className="md:hidden flex items-center gap-2 mb-6 text-gold/60 animate-pulse px-2 justify-end">
-                        <span className="text-[10px] tracking-[0.3em] font-bold uppercase">{language === 'am' ? 'ይግለጡ' : 'Swipe to Explore'}</span>
-                        <ArrowRight className="w-4 h-4" />
-                    </div>
+                    {/* Enhanced Mobile Swipe Hint */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: [0.4, 1, 0.4], x: [0, 5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                        className="md:hidden flex items-center gap-3 mb-8 text-gold px-4 justify-end"
+                    >
+                        <span className="text-[10px] tracking-[0.4em] font-black uppercase whitespace-nowrap">
+                            {language === 'am' ? 'ለበለጠ ዝርዝር ይግለጡ' : 'Swipe for More'}
+                        </span>
+                        <div className="w-12 h-[1px] bg-gold/50 relative">
+                            <motion.div
+                                animate={{ left: ["0%", "100%"] }}
+                                transition={{ duration: 1.5, repeat: Infinity }}
+                                className="absolute top-0 w-2 h-[1.5px] bg-gold shadow-[0_0_10px_#c8a95d]"
+                            />
+                        </div>
+                    </motion.div>
 
-                    <div className="md:grid md:grid-cols-6 md:gap-6 lg:gap-8 flex overflow-x-auto md:overflow-visible pb-12 md:pb-0 gap-6 custom-scrollbar snap-x snap-mandatory scroll-px-6 md:scroll-px-0">
+                    <div
+                        ref={scrollRef}
+                        onTouchStart={() => setIsAutoScrolling(false)}
+                        onMouseDown={() => setIsAutoScrolling(false)}
+                        className="md:grid md:grid-cols-6 md:gap-6 lg:gap-8 flex overflow-x-auto md:overflow-visible pb-12 md:pb-0 gap-6 custom-scrollbar snap-x snap-mandatory scroll-px-6 md:scroll-px-0"
+                    >
                         {packages.map((pkg, idx) => {
                             const pkgData = (t.packages as any)[pkg.id];
                             const isDiamond = pkg.id === "diamond";

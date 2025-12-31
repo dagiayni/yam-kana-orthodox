@@ -10,7 +10,7 @@ export default function BrandEssence() {
     const { t, language } = useLanguage();
 
     return (
-        <section className="py-24 md:py-48 bg-white relative overflow-hidden">
+        <section className="py-20 md:py-32 bg-white relative overflow-hidden">
             {/* Ambient Glows */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-magenta/5 rounded-full blur-[150px] -mr-64 -mt-32" />
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[150px] -ml-64 -mb-32" />
@@ -43,7 +43,7 @@ export default function BrandEssence() {
                         <div className="absolute -bottom-24 -right-2 md:-bottom-32 md:-right-16 text-gold/20 text-[120px] md:text-[200px] font-playfair pointer-events-none select-none italic">”</div>
 
                         <p className={cn(
-                            "text-2xl sm:text-3xl md:text-5xl lg:text-7xl text-magenta leading-[1.3] md:leading-[1.3] relative z-10 font-normal tracking-tight px-4 md:px-0",
+                            "text-xl sm:text-2xl md:text-3xl lg:text-5xl text-magenta leading-[1.3] md:leading-[1.3] relative z-10 font-normal tracking-tight px-4 md:px-0",
                             language === 'am' ? 'amharic' : 'font-playfair italic'
                         )}>
                             {t.brandEssence.content}

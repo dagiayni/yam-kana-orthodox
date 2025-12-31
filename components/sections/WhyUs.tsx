@@ -25,8 +25,8 @@ export default function WhyUs() {
                 <RevealOnScroll className="text-center mb-20">
                     <p className="text-gold text-xs tracking-[0.6em] uppercase mb-6 font-bold">The Difference</p>
                     <h2 className={cn(
-                        "text-4xl md:text-6xl text-white mb-8 tracking-tighter",
-                        language === 'am' ? 'amharic text-5xl md:text-6xl' : 'font-playfair'
+                        "text-3xl md:text-5xl text-white mb-8 tracking-tighter",
+                        language === 'am' ? 'amharic text-4xl md:text-5xl' : 'font-playfair'
                     )}>
                         {t.whyUs.title}
                     </h2>

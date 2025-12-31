@@ -23,9 +23,9 @@
 }
 
 html {
-  font-size: 90%;
-  /* Scales down all rem-based units (spacing, sizing, text) */
+  font-size: 85%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -171,6 +171,7 @@ h6 {
   background: linear-gradient(135deg, #c8a95d 0%, #ffffff 50%, #c8a95d 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer-text 5s linear infinite;
 }
