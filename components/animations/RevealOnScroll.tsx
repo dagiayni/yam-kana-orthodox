@@ -1,8 +1,7 @@
-"use strict";
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 interface RevealOnScrollProps {
@@ -24,7 +23,7 @@ export function RevealOnScroll({
     threshold: 0.1,
   });
 
-  const variants = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       y: direction === "up" ? 30 : direction === "down" ? -30 : 0,
@@ -37,7 +36,7 @@ export function RevealOnScroll({
       transition: {
         duration: 0.8,
         delay: delay,
-        ease: [0.21, 0.47, 0.32, 0.98],
+        ease: [0.22, 1, 0.36, 1], // Standardized easing
       },
     },
   };
