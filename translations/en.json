@@ -1,0 +1,232 @@
+{
+    "nav": {
+        "home": "Home",
+        "packages": "Packages",
+        "gallery": "Gallery",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "hero": {
+        "brandName": "Yam Kana",
+        "tagline": "Unity in Christ",
+        "description": "Celebrating your journey of love with holiness and elegance.",
+        "cta1": "Book Consultancy",
+        "cta2": "Download Pricing PDF"
+    },
+    "brandEssence": {
+        "title": "Our Essence",
+        "content": "Yam Kana is a faith-centered wedding organizer dedicated to ensuring couples celebrate their holy union with peace, joy, and breathtaking elegance."
+    },
+    "packages": {
+        "sectionLabel": "EXCLUSIVE SELECTIONS",
+        "title": "Wedding Packages",
+        "subtitle": "Carefully curated planning options tailored to your sacred celebration",
+        "mostPopular": "Most Popular",
+        "luxuryExperience": "Luxury Experience",
+        "seeMore": "See More",
+        "seeLess": "See Less",
+        "selectPackage": "Select Package",
+        "giftsIncluded": "Gifts Included",
+        "seeDetailedOffering": "See Detailed Offering",
+        "chooseThisPackage": "Choose This Package",
+        "whatIsIncluded": "What is included",
+        "exclusiveGifts": "Exclusive Gifts",
+        "eliteSelection": "Elite Selection",
+        "pearl": {
+            "name": "Pearl Package",
+            "tagline": "Simple & Elegant",
+            "price": "Standard",
+            "description": "Perfect for intimate family gatherings",
+            "features": [
+                "Day-of coordination",
+                "Basic theme design",
+                "Guest greeting service"
+            ],
+            "highlights": [
+                "Intimate ceremony",
+                "Clean aesthetics"
+            ],
+            "gifts": [
+                "Designer Photo Frame",
+                "Handmade Invitation Samples"
+            ]
+        },
+        "sapphire": {
+            "name": "Sapphire Package",
+            "tagline": "Grace & Honor",
+            "price": "Plus",
+            "description": "Comprehensive support for your big day",
+            "features": [
+                "Full day coordination",
+                "Vendor selection support",
+                "Catering supervision"
+            ],
+            "highlights": [
+                "Protocol management",
+                "Timeline control"
+            ],
+            "gifts": [
+                "Digital Wedding Album",
+                "Custom Stationery Set"
+            ]
+        },
+        "emerald": {
+            "name": "Emerald Package",
+            "tagline": "Complete Beauty",
+            "price": "Premium",
+            "description": "For those seeking special attention to detail",
+            "features": [
+                "Premium creative design",
+                "Guest lounge setup",
+                "Stage & Backdrop design"
+            ],
+            "highlights": [
+                "VIP hospitality",
+                "Classic theme"
+            ],
+            "gifts": [
+                "Pre-wedding Cinematic Trailer",
+                "Luxury Bridal Bouquet"
+            ]
+        },
+        "ruby": {
+            "name": "Ruby Package",
+            "tagline": "Majestic Splendor",
+            "price": "Elite",
+            "description": "For a grand and vibrant celebration",
+            "features": [
+                "Executive wedding manager",
+                "Floral masterpieces",
+                "Lighting & Sound design"
+            ],
+            "highlights": [
+                "Royal Entrance",
+                "Designer Cake"
+            ],
+            "gifts": [
+                "Full Wedding Highlight Film",
+                "Personalized Gift Concierge"
+            ]
+        },
+        "diamond": {
+            "name": "Diamond Package",
+            "tagline": "Imperial Unity",
+            "price": "Royal",
+            "description": "The ultimate luxury planning experience",
+            "features": [
+                "VIP concierge",
+                "Bespoke design concept",
+                "Religious protocol management"
+            ],
+            "highlights": [
+                "Imperial reception",
+                "Exclusive gifts"
+            ],
+            "gifts": [
+                "Luxury Honeymoon Package",
+                "Designer Gift Box"
+            ]
+        }
+    },
+    "addons": {
+        "title": "Customize Your Experience",
+        "subtitle": "Enhance your package with these optional add-ons",
+        "items": [
+            {
+                "id": "a1",
+                "name": "Premium Floral Upgrade",
+                "description": "Luxury imported flowers and custom arrangements",
+                "price": "$1,500+"
+            },
+            {
+                "id": "a2",
+                "name": "Live Music Package",
+                "description": "String quartet or live band for ceremony",
+                "price": "$2,000+"
+            },
+            {
+                "id": "a3",
+                "name": "Luxury Photo Booth",
+                "description": "Custom backdrop with instant prints & digital gallery",
+                "price": "$800+"
+            },
+            {
+                "id": "a4",
+                "name": "Cinematic Videography",
+                "description": "Full-day coverage with highlight reel",
+                "price": "$3,500+"
+            },
+            {
+                "id": "a5",
+                "name": "Guest Welcome Bags",
+                "description": "Personalized gifts for each guest",
+                "price": "$50/guest"
+            },
+            {
+                "id": "a6",
+                "name": "Rehearsal Dinner Planning",
+                "description": "Complete coordination for your rehearsal dinner",
+                "price": "$1,200+"
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Memory Gallery",
+        "subtitle": "A collection of beautiful love stories woven by Yam Kana",
+        "sectionLabel": "Portfolios",
+        "categories": {
+            "ritual": "Ritual",
+            "celebration": "Celebration",
+            "decor": "Decor",
+            "emotion": "Emotion",
+            "moment": "Moment",
+            "luxury": "Luxury"
+        },
+        "images": {
+            "img1": "Sacred Ceremonies",
+            "img2": "Royal Receptions",
+            "img3": "Elegant Details",
+            "img4": "Faith & Unity",
+            "img5": "Majestic Entrances",
+            "img6": "Bespoke Settings"
+        }
+    },
+    "whyUs": {
+        "title": "Why Yam Kana?",
+        "points": [
+            {
+                "title": "Founded in Faith",
+                "text": "Every event is crafted to respect and honor sacred values."
+            },
+            {
+                "title": "Exquisite Quality",
+                "text": "Our attention to detail makes your wedding unique and beloved."
+            },
+            {
+                "title": "Peaceful Experience",
+                "text": "We handle the pressure so you can focus on your joy."
+            }
+        ]
+    },
+    "about": {
+        "sectionLabel": "Our Story",
+        "title": "About Yam Kana",
+        "description": "Yam Kana is a team of dedicated professionals organizing weddings rooted in the Ethiopian Orthodox Tewahedo Church traditions. Unity is more beautiful in Christ.",
+        "content": "Yam Kana is a team of dedicated professionals organizing weddings rooted in the Ethiopian Orthodox Tewahedo Church traditions. Unity is more beautiful in Christ."
+    },
+    "cta": {
+        "text": "Start planning your dream wedding today.",
+        "button": "Book Free Consultation"
+    },
+    "footer": {
+        "rights": "All rights reserved. Yam Kana",
+        "contact": "Phone: +251 900 000 000 | Email: info@yamkana.com",
+        "philosophy": "Philosophy",
+        "getInTouch": "Get in touch",
+        "inquiries": "Inquiries",
+        "directLine": "Direct Line",
+        "returnToTop": "Return to top",
+        "whereHolinessMeets": "Where Holiness Meets",
+        "highElegance": "High Elegance"
+    }
+}
