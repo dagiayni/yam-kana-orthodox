@@ -22,6 +22,12 @@
   --color-gold-deep: #d4af37;
 }
 
+html {
+  font-size: 90%;
+  /* Scales down all rem-based units (spacing, sizing, text) */
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
@@ -33,6 +39,7 @@ body {
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1,
@@ -143,6 +150,7 @@ h6 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 /* Custom Luxury Styles */
 
 .glass-card {

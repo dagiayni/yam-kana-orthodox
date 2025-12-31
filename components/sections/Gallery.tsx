@@ -21,7 +21,7 @@ export default function Gallery() {
     const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
 
     return (
-        <section id="gallery" className="py-24 md:py-48 bg-white relative overflow-hidden">
+        <section id="gallery" className="py-20 md:py-32 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
                     <RevealOnScroll className="max-w-2xl">
@@ -35,8 +35,8 @@ export default function Gallery() {
                             </p>
                         </div>
                         <h2 className={cn(
-                            "text-5xl md:text-8xl text-black leading-tight tracking-tight",
-                            language === 'am' ? 'amharic text-6xl md:text-7xl lg:text-8xl' : 'font-playfair md:tracking-tighter'
+                            "text-4xl md:text-7xl text-black leading-tight tracking-tight",
+                            language === 'am' ? 'amharic text-5xl md:text-6xl lg:text-7xl' : 'font-playfair md:tracking-tighter'
                         )}>
                             {t.gallery.title}
                         </h2>
@@ -129,12 +129,12 @@ export default function Gallery() {
                                 <p className="text-gold tracking-[0.6em] uppercase text-[10px] mb-4 font-bold">
                                     {(t.gallery.categories as any)[selectedImage.categoryKey]}
                                 </p>
-                                <h3 className={cn(
-                                    "text-white text-4xl md:text-6xl mb-8",
+                                <h2 className={cn(
+                                    "text-4xl md:text-6xl lg:text-7xl text-white mb-8 tracking-tight",
                                     language === 'am' ? 'amharic' : 'font-playfair'
                                 )}>
                                     {(t.gallery.images as any)[selectedImage.key]}
-                                </h3>
+                                </h2>
                             </div>
                         </motion.div>
                     </motion.div>

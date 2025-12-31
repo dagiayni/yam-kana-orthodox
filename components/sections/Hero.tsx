@@ -44,7 +44,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
                     className={cn(
-                        "text-7xl md:text-[10rem] text-white mb-10 leading-tight drop-shadow-2xl",
+                        "text-6xl md:text-[8rem] text-white mb-8 leading-tight drop-shadow-2xl",
                         language === "am" ? "amharic" : "font-playfair font-normal"
                     )}
                 >
@@ -55,7 +55,7 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1.5 }}
-                    className="text-white/80 text-xl md:text-3xl font-light mb-20 max-w-4xl mx-auto italic leading-relaxed"
+                    className="text-white/80 text-lg md:text-2xl font-light mb-16 max-w-3xl mx-auto italic leading-relaxed"
                 >
                     "{t.hero.description}"
                 </motion.p>

@@ -32,8 +32,8 @@ export default function Navbar() {
             className={cn(
                 "fixed top-0 left-0 right-0 z-[100] transition-all duration-700",
                 isScrolled
-                    ? "py-4 mx-6 mt-6 rounded-full border border-white/20 shadow-2xl bg-white/70 backdrop-blur-2xl"
-                    : "bg-transparent py-10"
+                    ? "py-3 mx-6 mt-4 rounded-full border border-white/20 shadow-2xl bg-white/70 backdrop-blur-2xl"
+                    : "bg-transparent py-6"
             )}
         >
             <div className="container mx-auto px-8 flex justify-between items-center">
@@ -63,7 +63,7 @@ export default function Navbar() {
                 </motion.div>
 
                 {/* Desktop Nav */}
-                <div className="hidden lg:flex items-center space-x-12">
+                <div className="hidden lg:flex items-center space-x-8">
                     {navLinks.map((link, idx) => (
                         <motion.a
                             key={link.name}

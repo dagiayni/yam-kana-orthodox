@@ -11,7 +11,7 @@ export default function CTA() {
     const { t, language } = useLanguage();
 
     return (
-        <section id="cta" className="py-12 md:py-20 bg-white relative overflow-hidden">
+        <section id="cta" className="py-10 md:py-16 bg-white relative overflow-hidden">
             {/* Ambient Background Elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-magenta/5 rounded-full blur-[100px] pointer-events-none" />
 

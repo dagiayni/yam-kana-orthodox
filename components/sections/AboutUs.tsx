@@ -12,7 +12,7 @@ export default function AboutUs() {
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (
-        <section id="about" className="py-24 md:py-48 bg-white relative overflow-hidden">
+        <section id="about" className="py-20 md:py-32 bg-white relative overflow-hidden">
             {/* Ambient Elements */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-magenta/5 rounded-full blur-[100px] pointer-events-none" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-[100px] pointer-events-none" />
@@ -26,7 +26,7 @@ export default function AboutUs() {
                                 {t.about.sectionLabel}
                             </p>
                             <h2 className={cn(
-                                "text-5xl md:text-7xl text-magenta mb-8 leading-tight",
+                                "text-4xl md:text-6xl text-magenta mb-8 leading-tight",
                                 language === 'am' ? 'amharic' : 'font-playfair'
                             )}>
                                 {t.about.title}

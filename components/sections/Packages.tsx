@@ -74,7 +74,7 @@ export default function Packages() {
     };
 
     return (
-        <section id="packages" className="py-24 md:py-40 bg-black relative overflow-hidden">
+        <section id="packages" className="py-20 md:py-32 bg-black relative overflow-hidden">
             {/* Ambient Background */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
                 <div className="absolute top-1/4 -left-20 w-96 h-96 bg-magenta/10 rounded-full blur-[120px]" />
@@ -87,7 +87,7 @@ export default function Packages() {
                         {t.packages.sectionLabel}
                     </p>
                     <h2 className={cn(
-                        "text-5xl md:text-7xl lg:text-8xl text-white mb-10 tracking-tight",
+                        "text-4xl md:text-6xl lg:text-7xl text-white mb-8 tracking-tight",
                         language === 'am' ? 'amharic' : 'font-playfair'
                     )}>
                         {t.packages.title}
