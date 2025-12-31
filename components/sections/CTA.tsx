@@ -34,7 +34,7 @@ export default function CTA() {
                             variant="shimmer"
                             size="lg"
                             className="rounded-full tracking-[0.3em] uppercase text-[10px] px-8 py-6"
-                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => window.location.href = 'tel:0989681490'}
                         >
                             {t.cta.button}
                         </Button>

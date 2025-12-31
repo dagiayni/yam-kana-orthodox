@@ -73,7 +73,7 @@ export default function Footer() {
                      </div>
                      <div>
                         <p className="text-gold/40 text-[8px] tracking-widest uppercase font-bold mb-3">{t.footer.directLine}</p>
-                        <p className="text-lg md:text-xl font-playfair hover:text-gold transition-colors cursor-pointer text-black">+251 900 000 000</p>
+                        <p className="text-lg md:text-xl font-playfair hover:text-gold transition-colors cursor-pointer text-black" onClick={() => window.location.href = 'tel:0989681490'}>+251 989 681 490</p>
                      </div>
                   </div>
                </div>

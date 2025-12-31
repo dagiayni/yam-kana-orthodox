@@ -62,12 +62,7 @@ export default function Packages() {
     ];
 
     const handleSelectPackage = (packageId: string) => {
-        const contactSection = document.querySelector("#contact");
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: "smooth" });
-            const event = new CustomEvent("packageSelected", { detail: { packageId } });
-            window.dispatchEvent(event);
-        }
+        window.location.href = 'tel:0989681490';
     };
 
     const toggleAddon = (addonId: string) => {

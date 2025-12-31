@@ -67,7 +67,10 @@ export default function Hero() {
                     className="flex flex-col md:flex-row items-center justify-center gap-8"
                 >
                     {/* Book Consultancy Button - SHINING GOLD */}
-                    <button className="group relative px-12 py-6 overflow-hidden rounded-full min-w-[280px] shining-gold-effect shadow-[0_0_30px_rgba(200,169,93,0.3)]">
+                    <button
+                        onClick={() => window.location.href = 'tel:0989681490'}
+                        className="group relative px-12 py-6 overflow-hidden rounded-full min-w-[280px] shining-gold-effect shadow-[0_0_30px_rgba(200,169,93,0.3)]"
+                    >
                         <div className="absolute inset-0 bg-gradient-to-r from-gold via-gold-bright to-gold transition-transform duration-500 group-hover:scale-105" />
                         <span className="relative z-10 text-magenta text-sm font-bold tracking-[0.3em] uppercase">
                             {t.hero.cta1}

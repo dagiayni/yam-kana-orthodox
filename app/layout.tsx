@@ -23,7 +23,7 @@ const notoEthiopic = Noto_Serif_Ethiopic({
 });
 
 export const metadata: Metadata = {
-  title: "ያም ቃና | Yam Kana - orthodox Wedding Organizer",
+  title: "ያም ቃና | Yam Kana - Orthodox Wedding Organizer",
   description: "Faith-centered Ethiopian wedding organizer. Unity in Christ.",
   icons: {
     icon: "/assets/logo 1.png",
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="am" className="scroll-smooth">
+    <html lang="am" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${playfair.variable} ${inter.variable} ${notoEthiopic.variable} antialiased`}
       >
